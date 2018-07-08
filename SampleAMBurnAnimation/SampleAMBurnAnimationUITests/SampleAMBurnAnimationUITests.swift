@@ -1,6 +1,6 @@
 //
-//  BurnAnimationUITests.swift
-//  BurnAnimationUITests
+//  SampleAMBurnAnimationUITests.swift
+//  SampleAMBurnAnimationUITests
 //
 //  Created by am10 on 2018/07/08.
 //  Copyright © 2018年 am10. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class BurnAnimationUITests: XCTestCase {
+class SampleAMBurnAnimationUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()

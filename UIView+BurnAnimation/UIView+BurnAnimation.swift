@@ -8,9 +8,9 @@
 
 import UIKit
 
-extension UIView {
+public extension UIView {
     
-    func burnAnimation(duration: TimeInterval,
+    public func burnAnimation(duration: TimeInterval,
                        completion: (() -> Void)?) {
         
         let baseView = createBaseView()
@@ -109,7 +109,9 @@ extension UIView {
                                    color: UIColor) -> CAEmitterCell {
         
         let emitterCell = CAEmitterCell()
-        let image = UIImage(named: imageName)
+        class dummyClass {}
+        let bundle = Bundle(for: type(of: dummyClass()))
+        let image = UIImage(named: imageName, in: bundle, compatibleWith: nil)
         emitterCell.contents = image?.cgImage
         emitterCell.emissionLongitude = CGFloat(Double.pi*2)
         emitterCell.emissionRange = CGFloat(Double.pi)
@@ -124,7 +126,9 @@ extension UIView {
                                    color: UIColor) -> CAEmitterCell {
         
         let emitterCell = CAEmitterCell()
-        let image = UIImage(named: imageName)
+        class dummyClass {}
+        let bundle = Bundle(for: type(of: dummyClass()))
+        let image = UIImage(named: imageName, in: bundle, compatibleWith: nil)
         emitterCell.contents = image?.cgImage
         emitterCell.emissionLongitude = CGFloat(Double.pi*2)
         emitterCell.emissionRange = 0
@@ -146,12 +150,11 @@ extension UIView {
         
         let fireColor = UIColor(red: 0.89, green: 0.56, blue: 0.36, alpha: 0.5)
         let smokeColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.1)
-        emitterLayer.emitterCells = [createEmitterCell(imageName: "particle.png", color: fireColor),
-                                     createEmitterCell(imageName: "particle1.png", color: fireColor),
-                                     createSmokeEmitterCell(imageName: "particle2.png", color: smokeColor)]
+        emitterLayer.emitterCells = [createEmitterCell(imageName: "amb_particle.png", color: fireColor),
+                                     createEmitterCell(imageName: "amb_particle1.png", color: fireColor),
+                                     createSmokeEmitterCell(imageName: "amb_particle2.png", color: smokeColor)]
         return emitterLayer
     }
-    
 
     private func createGradientLayer(baseView: UIView) -> CAGradientLayer {
         

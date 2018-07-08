@@ -14,40 +14,38 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BurnAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SampleAMBurnAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CoQ-5t-sX5">
-                                <rect key="frame" x="170.5" y="622" width="33" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test.png" translatesAutoresizingMaskIntoConstraints="NO" id="IAR-DS-lNw">
+                                <rect key="frame" x="0.0" y="20" width="375" height="530.5"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MhO-ss-M2P">
+                                <rect key="frame" x="171" y="622" width="33" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="ibN-eP-JUJ"/>
+                                    <constraint firstAttribute="height" constant="30" id="4rr-30-Q75"/>
                                 </constraints>
                                 <state key="normal" title="Burn"/>
                                 <connections>
-                                    <action selector="tappedBt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xME-15-UW6"/>
+                                    <action selector="tappedBurnButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Wi-gB-Crp"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test.png" translatesAutoresizingMaskIntoConstraints="NO" id="yE9-ZS-r3q">
-                                <rect key="frame" x="0.0" y="20" width="375" height="530.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="yE9-ZS-r3q" secondAttribute="height" multiplier="1654:2339" id="127-F8-jpF"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="yE9-ZS-r3q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="HEu-mM-stn"/>
-                            <constraint firstItem="yE9-ZS-r3q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ca4-Aw-0EK"/>
-                            <constraint firstAttribute="trailing" secondItem="yE9-ZS-r3q" secondAttribute="trailing" id="mvh-dQ-oAZ"/>
-                            <constraint firstItem="CoQ-5t-sX5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qFT-EF-Huq"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CoQ-5t-sX5" secondAttribute="bottom" constant="15" id="wjt-sC-dfw"/>
+                            <constraint firstItem="IAR-DS-lNw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4sC-KI-TjQ"/>
+                            <constraint firstItem="MhO-ss-M2P" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fqr-Gk-9Iy"/>
+                            <constraint firstItem="IAR-DS-lNw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="PXt-kX-JjO"/>
+                            <constraint firstItem="IAR-DS-lNw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="f74-HO-sxP"/>
+                            <constraint firstItem="IAR-DS-lNw" firstAttribute="width" secondItem="IAR-DS-lNw" secondAttribute="height" multiplier="1654:2339" id="iYJ-b0-8IV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MhO-ss-M2P" secondAttribute="bottom" constant="15" id="qc5-qf-oCQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="targetView" destination="yE9-ZS-r3q" id="1Bf-bA-OXS"/>
+                        <outlet property="targetView" destination="IAR-DS-lNw" id="Pf1-Rp-zTY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

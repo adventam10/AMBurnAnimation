@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  BurnAnimation
+//  SampleAMBurnAnimation
 //
 //  Created by am10 on 2018/07/08.
 //  Copyright © 2018年 am10. All rights reserved.
@@ -17,7 +17,12 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    @IBAction func tappedBt(_ sender: UIButton) {
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+    @IBAction func tappedBurnButton(_ button: UIButton) {
         
         targetView.isHidden = false
         targetView.burnAnimation(duration: 3.0,
@@ -27,11 +32,5 @@ class ViewController: UIViewController {
                                     
         })
     }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
