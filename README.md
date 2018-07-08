@@ -1,6 +1,6 @@
-# UIView+BurnAnimation
+# AMBurnAnimation
 
-`UIView+BurnAnimation` is a UIView extension can display animation of burning view.
+`AMBurnAnimation` is a UIView extension can display animation of burning view.
 
 ## Demo
 
@@ -12,6 +12,23 @@
 targetView.burnAnimation(duration: 3.0,
                          completion: nil)
 
+```
+## Installation
+
+### CocoaPods
+
+Add this to your Podfile.
+
+```ogdl
+pod 'AMBurnAnimation'
+```
+
+### Carthage
+
+Add this to your Cartfile.
+
+```ogdl
+github "adventam10/AMBurnAnimation"
 ```
 
 ## License
