@@ -225,13 +225,16 @@
 				TargetAttributes = {
 					0E867B3020F24E35006A83CF = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1020;
 					};
 					0E867B4420F24E3B006A83CF = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 0E867B3020F24E35006A83CF;
 					};
 					0E867B4F20F24E3B006A83CF = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 0E867B3020F24E35006A83CF;
 					};
 				};
@@ -476,7 +479,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = am10.SampleAMBurnAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -494,7 +497,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = am10.SampleAMBurnAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -514,7 +517,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = am10.SampleAMBurnAnimationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleAMBurnAnimation.app/SampleAMBurnAnimation";
 			};
@@ -535,7 +538,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = am10.SampleAMBurnAnimationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleAMBurnAnimation.app/SampleAMBurnAnimation";
 			};
@@ -555,7 +558,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = am10.SampleAMBurnAnimationUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = SampleAMBurnAnimation;
 			};
@@ -575,7 +578,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = am10.SampleAMBurnAnimationUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = SampleAMBurnAnimation;
 			};

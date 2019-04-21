@@ -177,9 +177,11 @@
 				TargetAttributes = {
 					0E867B6B20F24EFE006A83CF = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1020;
 					};
 					0E867B7420F24EFE006A83CF = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -189,6 +191,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 0E867B6220F24EFE006A83CF;
 			productRefGroup = 0E867B6D20F24EFE006A83CF /* Products */;
@@ -389,7 +392,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = am10.AMBurnAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -414,7 +417,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = am10.AMBurnAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -433,7 +436,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = am10.AMBurnAnimationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -452,7 +455,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = am10.AMBurnAnimationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
