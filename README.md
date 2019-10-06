@@ -1,5 +1,10 @@
 # AMBurnAnimation
 
+![Pod Platform](https://img.shields.io/cocoapods/p/AMBurnAnimation.svg?style=flat)
+![Pod License](https://img.shields.io/cocoapods/l/AMBurnAnimation.svg?style=flat)
+[![Pod Version](https://img.shields.io/cocoapods/v/AMBurnAnimation.svg?style=flat)](http://cocoapods.org/pods/AMBurnAnimation)
+[![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+
 `AMBurnAnimation` is a UIView extension can display animation of burning view.
 
 ## Demo
