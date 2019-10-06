@@ -10,15 +10,15 @@ import UIKit
 
 public extension UIView {
     func burnAnimation(duration: TimeInterval,
-                       completion: (() -> Void)?) {
-        let baseView = createBaseView()
-        let imageView = createImageview(baseView: baseView)
+                       completion: (() -> Void)? = nil) {
+        let baseView = makeBaseView()
+        let imageView = makeImageview(baseView: baseView)
         baseView.addSubview(imageView)
         
-        let gradientLayer = createGradientLayer(baseView: baseView)
+        let gradientLayer = makeGradientLayer(baseView: baseView)
         baseView.layer.addSublayer(gradientLayer)
         
-        let emitterLayer = createEmitterLayer(baseView: baseView)
+        let emitterLayer = makeEmitterLayer(baseView: baseView)
         baseView.layer.addSublayer(emitterLayer)
         
         let startPoint = CGPoint(x: baseView.frame.size.width/2,
@@ -31,12 +31,12 @@ public extension UIView {
         
         superview?.addSubview(baseView)
         
-        let animationE = createEmitterLayerAnimation(duration: duration,
-                                                     startPoint: startPoint,
-                                                     endPoint: endPoint)
-        let animationG = createGradientLayerAnimation(duration: duration,
-                                                      startPoint: startPoint,
-                                                      endPoint: endPoint)
+        let animationE = makeEmitterLayerAnimation(duration: duration,
+                                                   startPoint: startPoint,
+                                                   endPoint: endPoint)
+        let animationG = makeGradientLayerAnimation(duration: duration,
+                                                    startPoint: startPoint,
+                                                    endPoint: endPoint)
         emitterLayer.add(animationE, forKey: nil)
         gradientLayer.add(animationG, forKey: nil)
         
@@ -59,22 +59,17 @@ public extension UIView {
                        animations:{
                         baseView.frame = frame
         },
-                       completion:{[weak self] (finished:Bool)in
+                       completion: { [weak self] (finished: Bool) in
                         baseView.removeFromSuperview()
-                        guard let weakSelf = self else {
-                            completion?()
-                            return
-                        }
-                        
-                        weakSelf.isHidden = false
+                        self?.isHidden = false
                         completion?()
         })
     }
     
-    // MARK: - Private
-    private func createGradientLayerAnimation(duration: TimeInterval,
-                                              startPoint: CGPoint,
-                                              endPoint: CGPoint) -> CABasicAnimation {
+    // MARK: - Animation
+    private func makeGradientLayerAnimation(duration: TimeInterval,
+                                            startPoint: CGPoint,
+                                            endPoint: CGPoint) -> CABasicAnimation {
         let sPoint = CGPoint(x: startPoint.x, y: startPoint.y - 5)
         let ePoint = CGPoint(x: endPoint.x, y: endPoint.y - 5)
         
@@ -86,9 +81,9 @@ public extension UIView {
         return animation
     }
     
-    private func createEmitterLayerAnimation(duration: TimeInterval,
-                                              startPoint: CGPoint,
-                                              endPoint: CGPoint) -> CABasicAnimation {
+    private func makeEmitterLayerAnimation(duration: TimeInterval,
+                                           startPoint: CGPoint,
+                                           endPoint: CGPoint) -> CABasicAnimation {
         let animation = CABasicAnimation(keyPath: "emitterPosition")
         animation.duration = duration
         animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
@@ -96,9 +91,26 @@ public extension UIView {
         animation.toValue = NSValue(cgPoint: endPoint)
         return animation
     }
-  
-    private func createEmitterCell(imageName: String,
-                                   color: UIColor) -> CAEmitterCell {
+    
+    // MARK: - EmitterLayer
+    private func makeEmitterLayer(baseView: UIView) -> CAEmitterLayer {
+        let emitterLayer = CAEmitterLayer()
+        let size = baseView.bounds.size
+        emitterLayer.emitterPosition = CGPoint(x: size.width/2, y: size.height/2)
+        emitterLayer.renderMode = CAEmitterLayerRenderMode.additive
+        emitterLayer.emitterShape = CAEmitterLayerEmitterShape.line
+        emitterLayer.emitterSize = CGSize(width: baseView.frame.size.width + 10, height: 10)
+        
+        let fireColor = UIColor(red: 0.89, green: 0.56, blue: 0.36, alpha: 0.5)
+        let smokeColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.1)
+        emitterLayer.emitterCells = [makeEmitterCell(imageName: "amb_particle.png", color: fireColor),
+                                     makeEmitterCell(imageName: "amb_particle1.png", color: fireColor),
+                                     makeSmokeEmitterCell(imageName: "amb_particle2.png", color: smokeColor)]
+        return emitterLayer
+    }
+    
+    private func makeEmitterCell(imageName: String,
+                                 color: UIColor) -> CAEmitterCell {
         let emitterCell = CAEmitterCell()
         class dummyClass {}
         let bundle = Bundle(for: type(of: dummyClass()))
@@ -113,8 +125,8 @@ public extension UIView {
         return emitterCell
     }
     
-    private func createSmokeEmitterCell(imageName: String,
-                                        color: UIColor) -> CAEmitterCell {
+    private func makeSmokeEmitterCell(imageName: String,
+                                      color: UIColor) -> CAEmitterCell {
         let emitterCell = CAEmitterCell()
         class dummyClass {}
         let bundle = Bundle(for: type(of: dummyClass()))
@@ -129,23 +141,8 @@ public extension UIView {
         return emitterCell
     }
     
-    private func createEmitterLayer(baseView: UIView) -> CAEmitterLayer {
-        let emitterLayer = CAEmitterLayer()
-        let size = baseView.bounds.size
-        emitterLayer.emitterPosition = CGPoint(x: size.width/2, y: size.height/2)
-        emitterLayer.renderMode = CAEmitterLayerRenderMode.additive
-        emitterLayer.emitterShape = CAEmitterLayerEmitterShape.line
-        emitterLayer.emitterSize = CGSize(width: baseView.frame.size.width + 10, height: 10)
-        
-        let fireColor = UIColor(red: 0.89, green: 0.56, blue: 0.36, alpha: 0.5)
-        let smokeColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.1)
-        emitterLayer.emitterCells = [createEmitterCell(imageName: "amb_particle.png", color: fireColor),
-                                     createEmitterCell(imageName: "amb_particle1.png", color: fireColor),
-                                     createSmokeEmitterCell(imageName: "amb_particle2.png", color: smokeColor)]
-        return emitterLayer
-    }
-
-    private func createGradientLayer(baseView: UIView) -> CAGradientLayer {
+    // MARK: - GradientLayer
+    private func makeGradientLayer(baseView: UIView) -> CAGradientLayer {
         let gradientLayer = CAGradientLayer()
         gradientLayer.startPoint = CGPoint(x: 0.5, y: 1.0)
         gradientLayer.endPoint = CGPoint(x: 0.5, y: 0)
@@ -158,19 +155,20 @@ public extension UIView {
         return gradientLayer
     }
     
-    private func createBaseView() -> UIView {
+    // MARK: - View
+    private func makeBaseView() -> UIView {
         let baseView = UIView(frame: self.frame)
-        return baseView;
+        return baseView
     }
     
-    private func createImageview(baseView: UIView) -> UIImageView {
+    private func makeImageview(baseView: UIView) -> UIImageView {
         let imageView = UIImageView(frame: baseView.bounds)
         imageView.image = screenCapture()
         imageView.contentMode = .top
         imageView.layer.masksToBounds = true
         return imageView
     }
-   
+    
     private func screenCapture() -> UIImage? {
         UIGraphicsBeginImageContextWithOptions(bounds.size, isOpaque, 0)
         defer {
