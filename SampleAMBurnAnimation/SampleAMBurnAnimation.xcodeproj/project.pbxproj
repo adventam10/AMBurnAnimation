@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E407A8A23547A790096FA4A /* UIView+BurnAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E407A8523547A790096FA4A /* UIView+BurnAnimation.swift */; };
+		0E407A8B23547A790096FA4A /* amb_particle.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E407A8723547A790096FA4A /* amb_particle.png */; };
+		0E407A8C23547A790096FA4A /* amb_particle1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E407A8823547A790096FA4A /* amb_particle1@2x.png */; };
+		0E407A8D23547A790096FA4A /* amb_particle2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E407A8923547A790096FA4A /* amb_particle2@2x.png */; };
 		0E867B3520F24E35006A83CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E867B3420F24E35006A83CF /* AppDelegate.swift */; };
 		0E867B3720F24E35006A83CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E867B3620F24E35006A83CF /* ViewController.swift */; };
 		0E867B3A20F24E35006A83CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E867B3820F24E35006A83CF /* Main.storyboard */; };
@@ -14,10 +18,6 @@
 		0E867B3F20F24E3B006A83CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E867B3D20F24E3B006A83CF /* LaunchScreen.storyboard */; };
 		0E867B4A20F24E3B006A83CF /* SampleAMBurnAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E867B4920F24E3B006A83CF /* SampleAMBurnAnimationTests.swift */; };
 		0E867B5520F24E3B006A83CF /* SampleAMBurnAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E867B5420F24E3B006A83CF /* SampleAMBurnAnimationUITests.swift */; };
-		0E867B9620F25A9C006A83CF /* amb_particle.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E867B9220F25A9C006A83CF /* amb_particle.png */; };
-		0E867B9720F25A9C006A83CF /* amb_particle1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E867B9320F25A9C006A83CF /* amb_particle1@2x.png */; };
-		0E867B9820F25A9C006A83CF /* amb_particle2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E867B9420F25A9C006A83CF /* amb_particle2@2x.png */; };
-		0E867B9920F25A9C006A83CF /* UIView+BurnAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E867B9520F25A9C006A83CF /* UIView+BurnAnimation.swift */; };
 		0E867B9B20F25AA6006A83CF /* test@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E867B9A20F25AA6006A83CF /* test@2x.png */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E407A8523547A790096FA4A /* UIView+BurnAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+BurnAnimation.swift"; sourceTree = "<group>"; };
+		0E407A8723547A790096FA4A /* amb_particle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amb_particle.png; sourceTree = "<group>"; };
+		0E407A8823547A790096FA4A /* amb_particle1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "amb_particle1@2x.png"; sourceTree = "<group>"; };
+		0E407A8923547A790096FA4A /* amb_particle2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "amb_particle2@2x.png"; sourceTree = "<group>"; };
 		0E867B3120F24E35006A83CF /* SampleAMBurnAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleAMBurnAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E867B3420F24E35006A83CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E867B3620F24E35006A83CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,10 +56,6 @@
 		0E867B5020F24E3B006A83CF /* SampleAMBurnAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleAMBurnAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E867B5420F24E3B006A83CF /* SampleAMBurnAnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAMBurnAnimationUITests.swift; sourceTree = "<group>"; };
 		0E867B5620F24E3B006A83CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0E867B9220F25A9C006A83CF /* amb_particle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amb_particle.png; sourceTree = "<group>"; };
-		0E867B9320F25A9C006A83CF /* amb_particle1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "amb_particle1@2x.png"; sourceTree = "<group>"; };
-		0E867B9420F25A9C006A83CF /* amb_particle2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "amb_particle2@2x.png"; sourceTree = "<group>"; };
-		0E867B9520F25A9C006A83CF /* UIView+BurnAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+BurnAnimation.swift"; sourceTree = "<group>"; };
 		0E867B9A20F25AA6006A83CF /* test@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "test@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +84,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E407A8423547A790096FA4A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0E407A8523547A790096FA4A /* UIView+BurnAnimation.swift */,
+				0E407A8623547A790096FA4A /* Resource */,
+			);
+			name = Source;
+			path = ../../Source;
+			sourceTree = "<group>";
+		};
+		0E407A8623547A790096FA4A /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				0E407A8723547A790096FA4A /* amb_particle.png */,
+				0E407A8823547A790096FA4A /* amb_particle1@2x.png */,
+				0E407A8923547A790096FA4A /* amb_particle2@2x.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		0E867B2820F24E35006A83CF = {
 			isa = PBXGroup;
 			children = (
@@ -107,8 +127,8 @@
 		0E867B3320F24E35006A83CF /* SampleAMBurnAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				0E407A8423547A790096FA4A /* Source */,
 				0E867B9A20F25AA6006A83CF /* test@2x.png */,
-				0E867B9020F25A9C006A83CF /* UIView+BurnAnimation */,
 				0E867B3420F24E35006A83CF /* AppDelegate.swift */,
 				0E867B3620F24E35006A83CF /* ViewController.swift */,
 				0E867B3820F24E35006A83CF /* Main.storyboard */,
@@ -135,26 +155,6 @@
 				0E867B5620F24E3B006A83CF /* Info.plist */,
 			);
 			path = SampleAMBurnAnimationUITests;
-			sourceTree = "<group>";
-		};
-		0E867B9020F25A9C006A83CF /* UIView+BurnAnimation */ = {
-			isa = PBXGroup;
-			children = (
-				0E867B9120F25A9C006A83CF /* Resource */,
-				0E867B9520F25A9C006A83CF /* UIView+BurnAnimation.swift */,
-			);
-			name = "UIView+BurnAnimation";
-			path = "../../UIView+BurnAnimation";
-			sourceTree = "<group>";
-		};
-		0E867B9120F25A9C006A83CF /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				0E867B9220F25A9C006A83CF /* amb_particle.png */,
-				0E867B9320F25A9C006A83CF /* amb_particle1@2x.png */,
-				0E867B9420F25A9C006A83CF /* amb_particle2@2x.png */,
-			);
-			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,13 +264,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E867B9820F25A9C006A83CF /* amb_particle2@2x.png in Resources */,
+				0E407A8D23547A790096FA4A /* amb_particle2@2x.png in Resources */,
 				0E867B3F20F24E3B006A83CF /* LaunchScreen.storyboard in Resources */,
 				0E867B3C20F24E3B006A83CF /* Assets.xcassets in Resources */,
-				0E867B9620F25A9C006A83CF /* amb_particle.png in Resources */,
 				0E867B3A20F24E35006A83CF /* Main.storyboard in Resources */,
 				0E867B9B20F25AA6006A83CF /* test@2x.png in Resources */,
-				0E867B9720F25A9C006A83CF /* amb_particle1@2x.png in Resources */,
+				0E407A8B23547A790096FA4A /* amb_particle.png in Resources */,
+				0E407A8C23547A790096FA4A /* amb_particle1@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E867B3720F24E35006A83CF /* ViewController.swift in Sources */,
-				0E867B9920F25A9C006A83CF /* UIView+BurnAnimation.swift in Sources */,
+				0E407A8A23547A790096FA4A /* UIView+BurnAnimation.swift in Sources */,
 				0E867B3520F24E35006A83CF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

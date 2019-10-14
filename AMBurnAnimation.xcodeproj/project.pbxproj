@@ -7,36 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E867B7620F24EFE006A83CF /* AMBurnAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E867B6C20F24EFE006A83CF /* AMBurnAnimation.framework */; };
-		0E867B7B20F24EFE006A83CF /* AMBurnAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E867B7A20F24EFE006A83CF /* AMBurnAnimationTests.swift */; };
+		0E407A9423547B240096FA4A /* UIView+BurnAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E407A8F23547B240096FA4A /* UIView+BurnAnimation.swift */; };
+		0E407A9523547B240096FA4A /* amb_particle.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E407A9123547B240096FA4A /* amb_particle.png */; };
+		0E407A9623547B240096FA4A /* amb_particle1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E407A9223547B240096FA4A /* amb_particle1@2x.png */; };
+		0E407A9723547B240096FA4A /* amb_particle2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E407A9323547B240096FA4A /* amb_particle2@2x.png */; };
 		0E867B7D20F24EFE006A83CF /* AMBurnAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E867B6F20F24EFE006A83CF /* AMBurnAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0E867B8C20F24F51006A83CF /* amb_particle.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E867B8820F24F51006A83CF /* amb_particle.png */; };
-		0E867B8D20F24F51006A83CF /* amb_particle1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E867B8920F24F51006A83CF /* amb_particle1@2x.png */; };
-		0E867B8E20F24F51006A83CF /* amb_particle2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E867B8A20F24F51006A83CF /* amb_particle2@2x.png */; };
-		0E867B8F20F24F51006A83CF /* UIView+BurnAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E867B8B20F24F51006A83CF /* UIView+BurnAnimation.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		0E867B7720F24EFE006A83CF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0E867B6320F24EFE006A83CF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0E867B6B20F24EFE006A83CF;
-			remoteInfo = AMBurnAnimation;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		0E407A8F23547B240096FA4A /* UIView+BurnAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+BurnAnimation.swift"; sourceTree = "<group>"; };
+		0E407A9123547B240096FA4A /* amb_particle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amb_particle.png; sourceTree = "<group>"; };
+		0E407A9223547B240096FA4A /* amb_particle1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "amb_particle1@2x.png"; sourceTree = "<group>"; };
+		0E407A9323547B240096FA4A /* amb_particle2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "amb_particle2@2x.png"; sourceTree = "<group>"; };
 		0E867B6C20F24EFE006A83CF /* AMBurnAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AMBurnAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E867B6F20F24EFE006A83CF /* AMBurnAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMBurnAnimation.h; sourceTree = "<group>"; };
 		0E867B7020F24EFE006A83CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0E867B7520F24EFE006A83CF /* AMBurnAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AMBurnAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0E867B7A20F24EFE006A83CF /* AMBurnAnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMBurnAnimationTests.swift; sourceTree = "<group>"; };
-		0E867B7C20F24EFE006A83CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0E867B8820F24F51006A83CF /* amb_particle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amb_particle.png; sourceTree = "<group>"; };
-		0E867B8920F24F51006A83CF /* amb_particle1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "amb_particle1@2x.png"; sourceTree = "<group>"; };
-		0E867B8A20F24F51006A83CF /* amb_particle2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "amb_particle2@2x.png"; sourceTree = "<group>"; };
-		0E867B8B20F24F51006A83CF /* UIView+BurnAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+BurnAnimation.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,23 +32,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0E867B7220F24EFE006A83CF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0E867B7620F24EFE006A83CF /* AMBurnAnimation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E407A8E23547B240096FA4A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0E407A8F23547B240096FA4A /* UIView+BurnAnimation.swift */,
+				0E407A9023547B240096FA4A /* Resource */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		0E407A9023547B240096FA4A /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				0E407A9123547B240096FA4A /* amb_particle.png */,
+				0E407A9223547B240096FA4A /* amb_particle1@2x.png */,
+				0E407A9323547B240096FA4A /* amb_particle2@2x.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		0E867B6220F24EFE006A83CF = {
 			isa = PBXGroup;
 			children = (
-				0E867B8620F24F51006A83CF /* UIView+BurnAnimation */,
+				0E407A8E23547B240096FA4A /* Source */,
 				0E867B6E20F24EFE006A83CF /* AMBurnAnimation */,
-				0E867B7920F24EFE006A83CF /* AMBurnAnimationTests */,
 				0E867B6D20F24EFE006A83CF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,7 +67,6 @@
 			isa = PBXGroup;
 			children = (
 				0E867B6C20F24EFE006A83CF /* AMBurnAnimation.framework */,
-				0E867B7520F24EFE006A83CF /* AMBurnAnimationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,35 +78,6 @@
 				0E867B7020F24EFE006A83CF /* Info.plist */,
 			);
 			path = AMBurnAnimation;
-			sourceTree = "<group>";
-		};
-		0E867B7920F24EFE006A83CF /* AMBurnAnimationTests */ = {
-			isa = PBXGroup;
-			children = (
-				0E867B7A20F24EFE006A83CF /* AMBurnAnimationTests.swift */,
-				0E867B7C20F24EFE006A83CF /* Info.plist */,
-			);
-			path = AMBurnAnimationTests;
-			sourceTree = "<group>";
-		};
-		0E867B8620F24F51006A83CF /* UIView+BurnAnimation */ = {
-			isa = PBXGroup;
-			children = (
-				0E867B8720F24F51006A83CF /* Resource */,
-				0E867B8B20F24F51006A83CF /* UIView+BurnAnimation.swift */,
-			);
-			name = "UIView+BurnAnimation";
-			path = "../UIView+BurnAnimation";
-			sourceTree = "<group>";
-		};
-		0E867B8720F24F51006A83CF /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				0E867B8820F24F51006A83CF /* amb_particle.png */,
-				0E867B8920F24F51006A83CF /* amb_particle1@2x.png */,
-				0E867B8A20F24F51006A83CF /* amb_particle2@2x.png */,
-			);
-			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,24 +112,6 @@
 			productReference = 0E867B6C20F24EFE006A83CF /* AMBurnAnimation.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		0E867B7420F24EFE006A83CF /* AMBurnAnimationTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0E867B8320F24EFE006A83CF /* Build configuration list for PBXNativeTarget "AMBurnAnimationTests" */;
-			buildPhases = (
-				0E867B7120F24EFE006A83CF /* Sources */,
-				0E867B7220F24EFE006A83CF /* Frameworks */,
-				0E867B7320F24EFE006A83CF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0E867B7820F24EFE006A83CF /* PBXTargetDependency */,
-			);
-			name = AMBurnAnimationTests;
-			productName = AMBurnAnimationTests;
-			productReference = 0E867B7520F24EFE006A83CF /* AMBurnAnimationTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -176,10 +123,6 @@
 				ORGANIZATIONNAME = am10;
 				TargetAttributes = {
 					0E867B6B20F24EFE006A83CF = {
-						CreatedOnToolsVersion = 9.4.1;
-						LastSwiftMigration = 1020;
-					};
-					0E867B7420F24EFE006A83CF = {
 						CreatedOnToolsVersion = 9.4.1;
 						LastSwiftMigration = 1020;
 					};
@@ -199,7 +142,6 @@
 			projectRoot = "";
 			targets = (
 				0E867B6B20F24EFE006A83CF /* AMBurnAnimation */,
-				0E867B7420F24EFE006A83CF /* AMBurnAnimationTests */,
 			);
 		};
 /* End PBXProject section */
@@ -209,16 +151,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E867B8E20F24F51006A83CF /* amb_particle2@2x.png in Resources */,
-				0E867B8C20F24F51006A83CF /* amb_particle.png in Resources */,
-				0E867B8D20F24F51006A83CF /* amb_particle1@2x.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0E867B7320F24EFE006A83CF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				0E407A9723547B240096FA4A /* amb_particle2@2x.png in Resources */,
+				0E407A9523547B240096FA4A /* amb_particle.png in Resources */,
+				0E407A9623547B240096FA4A /* amb_particle1@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,27 +164,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E867B8F20F24F51006A83CF /* UIView+BurnAnimation.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0E867B7120F24EFE006A83CF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0E867B7B20F24EFE006A83CF /* AMBurnAnimationTests.swift in Sources */,
+				0E407A9423547B240096FA4A /* UIView+BurnAnimation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		0E867B7820F24EFE006A83CF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0E867B6B20F24EFE006A83CF /* AMBurnAnimation */;
-			targetProxy = 0E867B7720F24EFE006A83CF /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0E867B7E20F24EFE006A83CF /* Debug */ = {
@@ -422,44 +341,6 @@
 			};
 			name = Release;
 		};
-		0E867B8420F24EFE006A83CF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = AMBurnAnimationTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = am10.AMBurnAnimationTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		0E867B8520F24EFE006A83CF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = AMBurnAnimationTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = am10.AMBurnAnimationTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -477,15 +358,6 @@
 			buildConfigurations = (
 				0E867B8120F24EFE006A83CF /* Debug */,
 				0E867B8220F24EFE006A83CF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0E867B8320F24EFE006A83CF /* Build configuration list for PBXNativeTarget "AMBurnAnimationTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0E867B8420F24EFE006A83CF /* Debug */,
-				0E867B8520F24EFE006A83CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
